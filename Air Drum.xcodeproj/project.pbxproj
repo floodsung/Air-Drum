@@ -1,0 +1,646 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1846FB11174EF8ED00090325 /* SRExternalViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1846FB10174EF8ED00090325 /* SRExternalViewController.m */; };
+		1846FB14174F2D7000090325 /* SRExternalGameViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1846FB13174F2D7000090325 /* SRExternalGameViewController.m */; };
+		1846FB1B174F2D9D00090325 /* SRGameViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1846FB19174F2D9D00090325 /* SRGameViewController.m */; };
+		1846FB1C174F2D9D00090325 /* SRGameViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1846FB1A174F2D9D00090325 /* SRGameViewController.xib */; };
+		184F7B35174DBB4800AD46F1 /* SROptionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 184F7B33174DBB4800AD46F1 /* SROptionViewController.m */; };
+		184F7B36174DBB4800AD46F1 /* SROptionViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 184F7B34174DBB4800AD46F1 /* SROptionViewController.xib */; };
+		189A7E20174F7AE7000F248E /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 189A7E1F174F7AE7000F248E /* AudioToolbox.framework */; };
+		189D52D5174C622800ABB60D /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 189D52D4174C622800ABB60D /* UIKit.framework */; };
+		189D52D7174C622800ABB60D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 189D52D6174C622800ABB60D /* Foundation.framework */; };
+		189D52D9174C622800ABB60D /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 189D52D8174C622800ABB60D /* CoreGraphics.framework */; };
+		189D52DF174C622900ABB60D /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 189D52DD174C622900ABB60D /* InfoPlist.strings */; };
+		189D52E1174C622900ABB60D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 189D52E0174C622900ABB60D /* main.m */; };
+		189D52E5174C622900ABB60D /* SRAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 189D52E4174C622900ABB60D /* SRAppDelegate.m */; };
+		189D52E7174C622900ABB60D /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 189D52E6174C622900ABB60D /* Default.png */; };
+		189D52EB174C622900ABB60D /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 189D52EA174C622900ABB60D /* Default-568h@2x.png */; };
+		189D52EE174C622900ABB60D /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 189D52EC174C622900ABB60D /* MainStoryboard.storyboard */; };
+		189D52F1174C622900ABB60D /* SRViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 189D52F0174C622900ABB60D /* SRViewController.m */; };
+		189D52F8174C623800ABB60D /* GLKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 189D52F7174C623800ABB60D /* GLKit.framework */; };
+		189D52FA174C623E00ABB60D /* CoreMotion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 189D52F9174C623E00ABB60D /* CoreMotion.framework */; };
+		189D5324174C627D00ABB60D /* bassDrumSound.wav in Resources */ = {isa = PBXBuildFile; fileRef = 189D52FF174C627D00ABB60D /* bassDrumSound.wav */; };
+		189D5325174C627D00ABB60D /* cymbalSound.wav in Resources */ = {isa = PBXBuildFile; fileRef = 189D5300174C627D00ABB60D /* cymbalSound.wav */; };
+		189D5326174C627D00ABB60D /* leftTomSound.wav in Resources */ = {isa = PBXBuildFile; fileRef = 189D5301174C627D00ABB60D /* leftTomSound.wav */; };
+		189D5327174C627D00ABB60D /* floorTomSound.wav in Resources */ = {isa = PBXBuildFile; fileRef = 189D5302174C627D00ABB60D /* floorTomSound.wav */; };
+		189D5328174C627D00ABB60D /* snareDrumSound.wav in Resources */ = {isa = PBXBuildFile; fileRef = 189D5303174C627D00ABB60D /* snareDrumSound.wav */; };
+		189D5329174C627D00ABB60D /* rightTomSound.wav in Resources */ = {isa = PBXBuildFile; fileRef = 189D5304174C627D00ABB60D /* rightTomSound.wav */; };
+		189D532A174C627D00ABB60D /* hiHatCymbalSound.wav in Resources */ = {isa = PBXBuildFile; fileRef = 189D5305174C627D00ABB60D /* hiHatCymbalSound.wav */; };
+		189D532B174C627D00ABB60D /* middleTomSound.wav in Resources */ = {isa = PBXBuildFile; fileRef = 189D5306174C627D00ABB60D /* middleTomSound.wav */; };
+		189D532C174C627D00ABB60D /* Cymbal@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 189D5308174C627D00ABB60D /* Cymbal@2x.png */; };
+		189D532D174C627D00ABB60D /* HiHatCymbal@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 189D5309174C627D00ABB60D /* HiHatCymbal@2x.png */; };
+		189D532E174C627D00ABB60D /* icon1024.png in Resources */ = {isa = PBXBuildFile; fileRef = 189D530A174C627D00ABB60D /* icon1024.png */; };
+		189D532F174C627D00ABB60D /* FloorTom@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 189D530B174C627D00ABB60D /* FloorTom@2x.png */; };
+		189D5330174C627D00ABB60D /* LeftTom@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 189D530C174C627D00ABB60D /* LeftTom@2x.png */; };
+		189D5331174C627D00ABB60D /* MiddleTom@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 189D530D174C627D00ABB60D /* MiddleTom@2x.png */; };
+		189D5332174C627D00ABB60D /* RightTom@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 189D530E174C627D00ABB60D /* RightTom@2x.png */; };
+		189D5333174C627D00ABB60D /* SnareDrum.png in Resources */ = {isa = PBXBuildFile; fileRef = 189D530F174C627D00ABB60D /* SnareDrum.png */; };
+		189D5334174C627D00ABB60D /* RightTom.png in Resources */ = {isa = PBXBuildFile; fileRef = 189D5310174C627D00ABB60D /* RightTom.png */; };
+		189D5335174C627D00ABB60D /* BassDrum@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 189D5311174C627D00ABB60D /* BassDrum@2x.png */; };
+		189D5336174C627D00ABB60D /* MiddleTom.png in Resources */ = {isa = PBXBuildFile; fileRef = 189D5312174C627D00ABB60D /* MiddleTom.png */; };
+		189D5337174C627D00ABB60D /* LeftTom.png in Resources */ = {isa = PBXBuildFile; fileRef = 189D5313174C627D00ABB60D /* LeftTom.png */; };
+		189D5338174C627D00ABB60D /* HiHatCymbal.png in Resources */ = {isa = PBXBuildFile; fileRef = 189D5314174C627D00ABB60D /* HiHatCymbal.png */; };
+		189D5339174C627D00ABB60D /* FloorTom.png in Resources */ = {isa = PBXBuildFile; fileRef = 189D5315174C627D00ABB60D /* FloorTom.png */; };
+		189D533A174C627D00ABB60D /* Cymbal.png in Resources */ = {isa = PBXBuildFile; fileRef = 189D5316174C627D00ABB60D /* Cymbal.png */; };
+		189D533B174C627D00ABB60D /* BassDrum.png in Resources */ = {isa = PBXBuildFile; fileRef = 189D5317174C627D00ABB60D /* BassDrum.png */; };
+		189D533D174C627D00ABB60D /* launch640-960.png in Resources */ = {isa = PBXBuildFile; fileRef = 189D5319174C627D00ABB60D /* launch640-960.png */; };
+		189D533E174C627D00ABB60D /* launch320-480.png in Resources */ = {isa = PBXBuildFile; fileRef = 189D531A174C627D00ABB60D /* launch320-480.png */; };
+		189D533F174C627D00ABB60D /* launch640-1136.png in Resources */ = {isa = PBXBuildFile; fileRef = 189D531B174C627D00ABB60D /* launch640-1136.png */; };
+		189D5340174C627D00ABB60D /* background.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 189D531C174C627D00ABB60D /* background.jpg */; };
+		189D5342174C627D00ABB60D /* backgroundiPhone5.png in Resources */ = {isa = PBXBuildFile; fileRef = 189D531E174C627D00ABB60D /* backgroundiPhone5.png */; };
+		189D5343174C627D00ABB60D /* backgroundiPhone5@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 189D531F174C627D00ABB60D /* backgroundiPhone5@2x.png */; };
+		189D5344174C627D00ABB60D /* launchImage320-480.png in Resources */ = {isa = PBXBuildFile; fileRef = 189D5320174C627D00ABB60D /* launchImage320-480.png */; };
+		189D5345174C627D00ABB60D /* backgroundiPhone4@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 189D5321174C627D00ABB60D /* backgroundiPhone4@2x.png */; };
+		189D5346174C627D00ABB60D /* backgroundiPhone4.png in Resources */ = {isa = PBXBuildFile; fileRef = 189D5322174C627D00ABB60D /* backgroundiPhone4.png */; };
+		189D5347174C627D00ABB60D /* SnareDrum@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 189D5323174C627D00ABB60D /* SnareDrum@2x.png */; };
+		189D534D174C62CE00ABB60D /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 189D534C174C62CE00ABB60D /* Default.png */; };
+		189D534F174C62D400ABB60D /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 189D534E174C62D400ABB60D /* Default@2x.png */; };
+		189D5351174C62D900ABB60D /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 189D5350174C62D900ABB60D /* Default-568h@2x.png */; };
+		189D5354174C62F900ABB60D /* SRHitDetector.m in Sources */ = {isa = PBXBuildFile; fileRef = 189D5353174C62F900ABB60D /* SRHitDetector.m */; };
+		189D5357174C63E600ABB60D /* SRMath.m in Sources */ = {isa = PBXBuildFile; fileRef = 189D5356174C63E600ABB60D /* SRMath.m */; };
+		189D535C174C666A00ABB60D /* menuiPhone4.png in Resources */ = {isa = PBXBuildFile; fileRef = 189D5358174C666A00ABB60D /* menuiPhone4.png */; };
+		189D535D174C666A00ABB60D /* menuiPhone4@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 189D5359174C666A00ABB60D /* menuiPhone4@2x.png */; };
+		189D535E174C666A00ABB60D /* menuiPhone5.png in Resources */ = {isa = PBXBuildFile; fileRef = 189D535A174C666A00ABB60D /* menuiPhone5.png */; };
+		189D535F174C666A00ABB60D /* menuiPhone5@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 189D535B174C666A00ABB60D /* menuiPhone5@2x.png */; };
+		189D5360174C67DB00ABB60D /* icon57.png in Resources */ = {isa = PBXBuildFile; fileRef = 189D5348174C62AA00ABB60D /* icon57.png */; };
+		189D5361174C67DD00ABB60D /* icon114.png in Resources */ = {isa = PBXBuildFile; fileRef = 189D534A174C62AF00ABB60D /* icon114.png */; };
+		18C18E96174DE873005AAF46 /* reCalibrateButton.png in Resources */ = {isa = PBXBuildFile; fileRef = 18C18E92174DE873005AAF46 /* reCalibrateButton.png */; };
+		18C18E97174DE873005AAF46 /* reCalibrateButton@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 18C18E93174DE873005AAF46 /* reCalibrateButton@2x.png */; };
+		18C18E98174DE873005AAF46 /* reCalibrateButtonDown.png in Resources */ = {isa = PBXBuildFile; fileRef = 18C18E94174DE873005AAF46 /* reCalibrateButtonDown.png */; };
+		18C18E99174DE873005AAF46 /* reCalibrateButtonDown@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 18C18E95174DE873005AAF46 /* reCalibrateButtonDown@2x.png */; };
+		18C18E9E174E0B2C005AAF46 /* defaultButton.png in Resources */ = {isa = PBXBuildFile; fileRef = 18C18E9A174E0B2C005AAF46 /* defaultButton.png */; };
+		18C18E9F174E0B2C005AAF46 /* defaultButton@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 18C18E9B174E0B2C005AAF46 /* defaultButton@2x.png */; };
+		18C18EA0174E0B2C005AAF46 /* defaultButtonDown.png in Resources */ = {isa = PBXBuildFile; fileRef = 18C18E9C174E0B2C005AAF46 /* defaultButtonDown.png */; };
+		18C18EA1174E0B2C005AAF46 /* defaultButtonDown@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 18C18E9D174E0B2C005AAF46 /* defaultButtonDown@2x.png */; };
+		18C18EA3174E0E86005AAF46 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18C18EA2174E0E86005AAF46 /* QuartzCore.framework */; };
+		18C18EA6174E1675005AAF46 /* slider_maximum.png in Resources */ = {isa = PBXBuildFile; fileRef = 18C18EA4174E1675005AAF46 /* slider_maximum.png */; };
+		18C18EA7174E1675005AAF46 /* slider_minimum.png in Resources */ = {isa = PBXBuildFile; fileRef = 18C18EA5174E1675005AAF46 /* slider_minimum.png */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		1846FB0F174EF8ED00090325 /* SRExternalViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SRExternalViewController.h; sourceTree = "<group>"; };
+		1846FB10174EF8ED00090325 /* SRExternalViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SRExternalViewController.m; sourceTree = "<group>"; };
+		1846FB12174F2D7000090325 /* SRExternalGameViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SRExternalGameViewController.h; sourceTree = "<group>"; };
+		1846FB13174F2D7000090325 /* SRExternalGameViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SRExternalGameViewController.m; sourceTree = "<group>"; };
+		1846FB18174F2D9D00090325 /* SRGameViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SRGameViewController.h; sourceTree = "<group>"; };
+		1846FB19174F2D9D00090325 /* SRGameViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SRGameViewController.m; sourceTree = "<group>"; };
+		1846FB1A174F2D9D00090325 /* SRGameViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SRGameViewController.xib; sourceTree = "<group>"; };
+		184F7B32174DBB4800AD46F1 /* SROptionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SROptionViewController.h; sourceTree = "<group>"; };
+		184F7B33174DBB4800AD46F1 /* SROptionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SROptionViewController.m; sourceTree = "<group>"; };
+		184F7B34174DBB4800AD46F1 /* SROptionViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SROptionViewController.xib; sourceTree = "<group>"; };
+		189A7E1F174F7AE7000F248E /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		189D52D1174C622800ABB60D /* Air Drum.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Air Drum.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		189D52D4174C622800ABB60D /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		189D52D6174C622800ABB60D /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		189D52D8174C622800ABB60D /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		189D52DC174C622900ABB60D /* Air Drum-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Air Drum-Info.plist"; sourceTree = "<group>"; };
+		189D52DE174C622900ABB60D /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		189D52E0174C622900ABB60D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		189D52E2174C622900ABB60D /* Air Drum-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Air Drum-Prefix.pch"; sourceTree = "<group>"; };
+		189D52E3174C622900ABB60D /* SRAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SRAppDelegate.h; sourceTree = "<group>"; };
+		189D52E4174C622900ABB60D /* SRAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SRAppDelegate.m; sourceTree = "<group>"; };
+		189D52E6174C622900ABB60D /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		189D52E8174C622900ABB60D /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+		189D52EA174C622900ABB60D /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		189D52ED174C622900ABB60D /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
+		189D52EF174C622900ABB60D /* SRViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SRViewController.h; sourceTree = "<group>"; };
+		189D52F0174C622900ABB60D /* SRViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SRViewController.m; sourceTree = "<group>"; };
+		189D52F7174C623800ABB60D /* GLKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GLKit.framework; path = System/Library/Frameworks/GLKit.framework; sourceTree = SDKROOT; };
+		189D52F9174C623E00ABB60D /* CoreMotion.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMotion.framework; path = System/Library/Frameworks/CoreMotion.framework; sourceTree = SDKROOT; };
+		189D52FF174C627D00ABB60D /* bassDrumSound.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = bassDrumSound.wav; sourceTree = "<group>"; };
+		189D5300174C627D00ABB60D /* cymbalSound.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = cymbalSound.wav; sourceTree = "<group>"; };
+		189D5301174C627D00ABB60D /* leftTomSound.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = leftTomSound.wav; sourceTree = "<group>"; };
+		189D5302174C627D00ABB60D /* floorTomSound.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = floorTomSound.wav; sourceTree = "<group>"; };
+		189D5303174C627D00ABB60D /* snareDrumSound.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = snareDrumSound.wav; sourceTree = "<group>"; };
+		189D5304174C627D00ABB60D /* rightTomSound.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = rightTomSound.wav; sourceTree = "<group>"; };
+		189D5305174C627D00ABB60D /* hiHatCymbalSound.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = hiHatCymbalSound.wav; sourceTree = "<group>"; };
+		189D5306174C627D00ABB60D /* middleTomSound.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = middleTomSound.wav; sourceTree = "<group>"; };
+		189D5308174C627D00ABB60D /* Cymbal@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Cymbal@2x.png"; sourceTree = "<group>"; };
+		189D5309174C627D00ABB60D /* HiHatCymbal@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "HiHatCymbal@2x.png"; sourceTree = "<group>"; };
+		189D530A174C627D00ABB60D /* icon1024.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon1024.png; sourceTree = "<group>"; };
+		189D530B174C627D00ABB60D /* FloorTom@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "FloorTom@2x.png"; sourceTree = "<group>"; };
+		189D530C174C627D00ABB60D /* LeftTom@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "LeftTom@2x.png"; sourceTree = "<group>"; };
+		189D530D174C627D00ABB60D /* MiddleTom@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "MiddleTom@2x.png"; sourceTree = "<group>"; };
+		189D530E174C627D00ABB60D /* RightTom@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "RightTom@2x.png"; sourceTree = "<group>"; };
+		189D530F174C627D00ABB60D /* SnareDrum.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = SnareDrum.png; sourceTree = "<group>"; };
+		189D5310174C627D00ABB60D /* RightTom.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = RightTom.png; sourceTree = "<group>"; };
+		189D5311174C627D00ABB60D /* BassDrum@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "BassDrum@2x.png"; sourceTree = "<group>"; };
+		189D5312174C627D00ABB60D /* MiddleTom.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = MiddleTom.png; sourceTree = "<group>"; };
+		189D5313174C627D00ABB60D /* LeftTom.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = LeftTom.png; sourceTree = "<group>"; };
+		189D5314174C627D00ABB60D /* HiHatCymbal.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = HiHatCymbal.png; sourceTree = "<group>"; };
+		189D5315174C627D00ABB60D /* FloorTom.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = FloorTom.png; sourceTree = "<group>"; };
+		189D5316174C627D00ABB60D /* Cymbal.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Cymbal.png; sourceTree = "<group>"; };
+		189D5317174C627D00ABB60D /* BassDrum.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = BassDrum.png; sourceTree = "<group>"; };
+		189D5319174C627D00ABB60D /* launch640-960.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "launch640-960.png"; sourceTree = "<group>"; };
+		189D531A174C627D00ABB60D /* launch320-480.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "launch320-480.png"; sourceTree = "<group>"; };
+		189D531B174C627D00ABB60D /* launch640-1136.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "launch640-1136.png"; sourceTree = "<group>"; };
+		189D531C174C627D00ABB60D /* background.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = background.jpg; sourceTree = "<group>"; };
+		189D531E174C627D00ABB60D /* backgroundiPhone5.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = backgroundiPhone5.png; sourceTree = "<group>"; };
+		189D531F174C627D00ABB60D /* backgroundiPhone5@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "backgroundiPhone5@2x.png"; sourceTree = "<group>"; };
+		189D5320174C627D00ABB60D /* launchImage320-480.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "launchImage320-480.png"; sourceTree = "<group>"; };
+		189D5321174C627D00ABB60D /* backgroundiPhone4@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "backgroundiPhone4@2x.png"; sourceTree = "<group>"; };
+		189D5322174C627D00ABB60D /* backgroundiPhone4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = backgroundiPhone4.png; sourceTree = "<group>"; };
+		189D5323174C627D00ABB60D /* SnareDrum@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "SnareDrum@2x.png"; sourceTree = "<group>"; };
+		189D5348174C62AA00ABB60D /* icon57.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = icon57.png; path = ../../icon57.png; sourceTree = "<group>"; };
+		189D534A174C62AF00ABB60D /* icon114.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = icon114.png; path = ../../icon114.png; sourceTree = "<group>"; };
+		189D534C174C62CE00ABB60D /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Default.png; path = ../../Default.png; sourceTree = "<group>"; };
+		189D534E174C62D400ABB60D /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Default@2x.png"; path = "../../Default@2x.png"; sourceTree = "<group>"; };
+		189D5350174C62D900ABB60D /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Default-568h@2x.png"; path = "../../Default-568h@2x.png"; sourceTree = "<group>"; };
+		189D5352174C62F900ABB60D /* SRHitDetector.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SRHitDetector.h; sourceTree = "<group>"; };
+		189D5353174C62F900ABB60D /* SRHitDetector.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SRHitDetector.m; sourceTree = "<group>"; };
+		189D5355174C63E600ABB60D /* SRMath.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SRMath.h; sourceTree = "<group>"; };
+		189D5356174C63E600ABB60D /* SRMath.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SRMath.m; sourceTree = "<group>"; };
+		189D5358174C666A00ABB60D /* menuiPhone4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = menuiPhone4.png; sourceTree = "<group>"; };
+		189D5359174C666A00ABB60D /* menuiPhone4@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "menuiPhone4@2x.png"; sourceTree = "<group>"; };
+		189D535A174C666A00ABB60D /* menuiPhone5.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = menuiPhone5.png; sourceTree = "<group>"; };
+		189D535B174C666A00ABB60D /* menuiPhone5@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "menuiPhone5@2x.png"; sourceTree = "<group>"; };
+		18C18E92174DE873005AAF46 /* reCalibrateButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = reCalibrateButton.png; sourceTree = "<group>"; };
+		18C18E93174DE873005AAF46 /* reCalibrateButton@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "reCalibrateButton@2x.png"; sourceTree = "<group>"; };
+		18C18E94174DE873005AAF46 /* reCalibrateButtonDown.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = reCalibrateButtonDown.png; sourceTree = "<group>"; };
+		18C18E95174DE873005AAF46 /* reCalibrateButtonDown@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "reCalibrateButtonDown@2x.png"; sourceTree = "<group>"; };
+		18C18E9A174E0B2C005AAF46 /* defaultButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = defaultButton.png; sourceTree = "<group>"; };
+		18C18E9B174E0B2C005AAF46 /* defaultButton@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "defaultButton@2x.png"; sourceTree = "<group>"; };
+		18C18E9C174E0B2C005AAF46 /* defaultButtonDown.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = defaultButtonDown.png; sourceTree = "<group>"; };
+		18C18E9D174E0B2C005AAF46 /* defaultButtonDown@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "defaultButtonDown@2x.png"; sourceTree = "<group>"; };
+		18C18EA2174E0E86005AAF46 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		18C18EA4174E1675005AAF46 /* slider_maximum.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = slider_maximum.png; sourceTree = "<group>"; };
+		18C18EA5174E1675005AAF46 /* slider_minimum.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = slider_minimum.png; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		189D52CE174C622800ABB60D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				189A7E20174F7AE7000F248E /* AudioToolbox.framework in Frameworks */,
+				18C18EA3174E0E86005AAF46 /* QuartzCore.framework in Frameworks */,
+				189D52FA174C623E00ABB60D /* CoreMotion.framework in Frameworks */,
+				189D52F8174C623800ABB60D /* GLKit.framework in Frameworks */,
+				189D52D5174C622800ABB60D /* UIKit.framework in Frameworks */,
+				189D52D7174C622800ABB60D /* Foundation.framework in Frameworks */,
+				189D52D9174C622800ABB60D /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		189D52C8174C622800ABB60D = {
+			isa = PBXGroup;
+			children = (
+				189D52DA174C622800ABB60D /* Air Drum */,
+				189D52D3174C622800ABB60D /* Frameworks */,
+				189D52D2174C622800ABB60D /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		189D52D2174C622800ABB60D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				189D52D1174C622800ABB60D /* Air Drum.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		189D52D3174C622800ABB60D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				189A7E1F174F7AE7000F248E /* AudioToolbox.framework */,
+				18C18EA2174E0E86005AAF46 /* QuartzCore.framework */,
+				189D52F9174C623E00ABB60D /* CoreMotion.framework */,
+				189D52F7174C623800ABB60D /* GLKit.framework */,
+				189D52D4174C622800ABB60D /* UIKit.framework */,
+				189D52D6174C622800ABB60D /* Foundation.framework */,
+				189D52D8174C622800ABB60D /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		189D52DA174C622800ABB60D /* Air Drum */ = {
+			isa = PBXGroup;
+			children = (
+				18C18EAB174E1A9B005AAF46 /* Model */,
+				18C18EAA174E1A8F005AAF46 /* ViewControllers */,
+				18C18EA9174E1A83005AAF46 /* Singleton */,
+				189D52FD174C627D00ABB60D /* Resource */,
+				189D52DB174C622800ABB60D /* Supporting Files */,
+			);
+			path = "Air Drum";
+			sourceTree = "<group>";
+		};
+		189D52DB174C622800ABB60D /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				189D52DC174C622900ABB60D /* Air Drum-Info.plist */,
+				189D52DD174C622900ABB60D /* InfoPlist.strings */,
+				189D52E0174C622900ABB60D /* main.m */,
+				189D52E2174C622900ABB60D /* Air Drum-Prefix.pch */,
+				189D52E6174C622900ABB60D /* Default.png */,
+				189D52E8174C622900ABB60D /* Default@2x.png */,
+				189D52EA174C622900ABB60D /* Default-568h@2x.png */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		189D52FD174C627D00ABB60D /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				18C18EA8174E1A70005AAF46 /* iconAndLaunchImages */,
+				189D52FE174C627D00ABB60D /* Audios */,
+				189D5307174C627D00ABB60D /* Images */,
+			);
+			path = Resource;
+			sourceTree = "<group>";
+		};
+		189D52FE174C627D00ABB60D /* Audios */ = {
+			isa = PBXGroup;
+			children = (
+				189D52FF174C627D00ABB60D /* bassDrumSound.wav */,
+				189D5300174C627D00ABB60D /* cymbalSound.wav */,
+				189D5301174C627D00ABB60D /* leftTomSound.wav */,
+				189D5302174C627D00ABB60D /* floorTomSound.wav */,
+				189D5303174C627D00ABB60D /* snareDrumSound.wav */,
+				189D5304174C627D00ABB60D /* rightTomSound.wav */,
+				189D5305174C627D00ABB60D /* hiHatCymbalSound.wav */,
+				189D5306174C627D00ABB60D /* middleTomSound.wav */,
+			);
+			path = Audios;
+			sourceTree = "<group>";
+		};
+		189D5307174C627D00ABB60D /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				18C18EA4174E1675005AAF46 /* slider_maximum.png */,
+				18C18EA5174E1675005AAF46 /* slider_minimum.png */,
+				18C18E9A174E0B2C005AAF46 /* defaultButton.png */,
+				18C18E9B174E0B2C005AAF46 /* defaultButton@2x.png */,
+				18C18E9C174E0B2C005AAF46 /* defaultButtonDown.png */,
+				18C18E9D174E0B2C005AAF46 /* defaultButtonDown@2x.png */,
+				18C18E92174DE873005AAF46 /* reCalibrateButton.png */,
+				18C18E93174DE873005AAF46 /* reCalibrateButton@2x.png */,
+				18C18E94174DE873005AAF46 /* reCalibrateButtonDown.png */,
+				18C18E95174DE873005AAF46 /* reCalibrateButtonDown@2x.png */,
+				189D5358174C666A00ABB60D /* menuiPhone4.png */,
+				189D5359174C666A00ABB60D /* menuiPhone4@2x.png */,
+				189D535A174C666A00ABB60D /* menuiPhone5.png */,
+				189D535B174C666A00ABB60D /* menuiPhone5@2x.png */,
+				189D5308174C627D00ABB60D /* Cymbal@2x.png */,
+				189D5309174C627D00ABB60D /* HiHatCymbal@2x.png */,
+				189D530A174C627D00ABB60D /* icon1024.png */,
+				189D530B174C627D00ABB60D /* FloorTom@2x.png */,
+				189D530C174C627D00ABB60D /* LeftTom@2x.png */,
+				189D530D174C627D00ABB60D /* MiddleTom@2x.png */,
+				189D530E174C627D00ABB60D /* RightTom@2x.png */,
+				189D530F174C627D00ABB60D /* SnareDrum.png */,
+				189D5310174C627D00ABB60D /* RightTom.png */,
+				189D5311174C627D00ABB60D /* BassDrum@2x.png */,
+				189D5312174C627D00ABB60D /* MiddleTom.png */,
+				189D5313174C627D00ABB60D /* LeftTom.png */,
+				189D5314174C627D00ABB60D /* HiHatCymbal.png */,
+				189D5315174C627D00ABB60D /* FloorTom.png */,
+				189D5316174C627D00ABB60D /* Cymbal.png */,
+				189D5317174C627D00ABB60D /* BassDrum.png */,
+				189D5319174C627D00ABB60D /* launch640-960.png */,
+				189D531A174C627D00ABB60D /* launch320-480.png */,
+				189D531B174C627D00ABB60D /* launch640-1136.png */,
+				189D531C174C627D00ABB60D /* background.jpg */,
+				189D531E174C627D00ABB60D /* backgroundiPhone5.png */,
+				189D531F174C627D00ABB60D /* backgroundiPhone5@2x.png */,
+				189D5320174C627D00ABB60D /* launchImage320-480.png */,
+				189D5321174C627D00ABB60D /* backgroundiPhone4@2x.png */,
+				189D5322174C627D00ABB60D /* backgroundiPhone4.png */,
+				189D5323174C627D00ABB60D /* SnareDrum@2x.png */,
+			);
+			path = Images;
+			sourceTree = "<group>";
+		};
+		18C18EA8174E1A70005AAF46 /* iconAndLaunchImages */ = {
+			isa = PBXGroup;
+			children = (
+				189D5350174C62D900ABB60D /* Default-568h@2x.png */,
+				189D534E174C62D400ABB60D /* Default@2x.png */,
+				189D534C174C62CE00ABB60D /* Default.png */,
+				189D534A174C62AF00ABB60D /* icon114.png */,
+				189D5348174C62AA00ABB60D /* icon57.png */,
+			);
+			name = iconAndLaunchImages;
+			sourceTree = "<group>";
+		};
+		18C18EA9174E1A83005AAF46 /* Singleton */ = {
+			isa = PBXGroup;
+			children = (
+				189D52E3174C622900ABB60D /* SRAppDelegate.h */,
+				189D52E4174C622900ABB60D /* SRAppDelegate.m */,
+				189D52EC174C622900ABB60D /* MainStoryboard.storyboard */,
+			);
+			name = Singleton;
+			sourceTree = "<group>";
+		};
+		18C18EAA174E1A8F005AAF46 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				189D52EF174C622900ABB60D /* SRViewController.h */,
+				189D52F0174C622900ABB60D /* SRViewController.m */,
+				184F7B32174DBB4800AD46F1 /* SROptionViewController.h */,
+				184F7B33174DBB4800AD46F1 /* SROptionViewController.m */,
+				184F7B34174DBB4800AD46F1 /* SROptionViewController.xib */,
+				1846FB0F174EF8ED00090325 /* SRExternalViewController.h */,
+				1846FB10174EF8ED00090325 /* SRExternalViewController.m */,
+				1846FB12174F2D7000090325 /* SRExternalGameViewController.h */,
+				1846FB13174F2D7000090325 /* SRExternalGameViewController.m */,
+				1846FB18174F2D9D00090325 /* SRGameViewController.h */,
+				1846FB19174F2D9D00090325 /* SRGameViewController.m */,
+				1846FB1A174F2D9D00090325 /* SRGameViewController.xib */,
+			);
+			name = ViewControllers;
+			sourceTree = "<group>";
+		};
+		18C18EAB174E1A9B005AAF46 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				189D5352174C62F900ABB60D /* SRHitDetector.h */,
+				189D5353174C62F900ABB60D /* SRHitDetector.m */,
+				189D5355174C63E600ABB60D /* SRMath.h */,
+				189D5356174C63E600ABB60D /* SRMath.m */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		189D52D0174C622800ABB60D /* Air Drum */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 189D52F4174C622900ABB60D /* Build configuration list for PBXNativeTarget "Air Drum" */;
+			buildPhases = (
+				189D52CD174C622800ABB60D /* Sources */,
+				189D52CE174C622800ABB60D /* Frameworks */,
+				189D52CF174C622800ABB60D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Air Drum";
+			productName = "Air Drum";
+			productReference = 189D52D1174C622800ABB60D /* Air Drum.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		189D52C9174C622800ABB60D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = SR;
+				LastUpgradeCheck = 0460;
+				ORGANIZATIONNAME = Rotek;
+				TargetAttributes = {
+					189D52D0174C622800ABB60D = {
+						DevelopmentTeam = RZGSSCAQVM;
+					};
+				};
+			};
+			buildConfigurationList = 189D52CC174C622800ABB60D /* Build configuration list for PBXProject "Air Drum" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 189D52C8174C622800ABB60D;
+			productRefGroup = 189D52D2174C622800ABB60D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				189D52D0174C622800ABB60D /* Air Drum */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		189D52CF174C622800ABB60D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				189D52DF174C622900ABB60D /* InfoPlist.strings in Resources */,
+				189D52E7174C622900ABB60D /* Default.png in Resources */,
+				189D52EB174C622900ABB60D /* Default-568h@2x.png in Resources */,
+				189D52EE174C622900ABB60D /* MainStoryboard.storyboard in Resources */,
+				189D5324174C627D00ABB60D /* bassDrumSound.wav in Resources */,
+				189D5325174C627D00ABB60D /* cymbalSound.wav in Resources */,
+				189D5326174C627D00ABB60D /* leftTomSound.wav in Resources */,
+				189D5327174C627D00ABB60D /* floorTomSound.wav in Resources */,
+				189D5328174C627D00ABB60D /* snareDrumSound.wav in Resources */,
+				189D5329174C627D00ABB60D /* rightTomSound.wav in Resources */,
+				189D532A174C627D00ABB60D /* hiHatCymbalSound.wav in Resources */,
+				189D532B174C627D00ABB60D /* middleTomSound.wav in Resources */,
+				189D532C174C627D00ABB60D /* Cymbal@2x.png in Resources */,
+				189D532D174C627D00ABB60D /* HiHatCymbal@2x.png in Resources */,
+				189D532E174C627D00ABB60D /* icon1024.png in Resources */,
+				189D532F174C627D00ABB60D /* FloorTom@2x.png in Resources */,
+				189D5330174C627D00ABB60D /* LeftTom@2x.png in Resources */,
+				189D5331174C627D00ABB60D /* MiddleTom@2x.png in Resources */,
+				189D5332174C627D00ABB60D /* RightTom@2x.png in Resources */,
+				189D5333174C627D00ABB60D /* SnareDrum.png in Resources */,
+				189D5334174C627D00ABB60D /* RightTom.png in Resources */,
+				189D5335174C627D00ABB60D /* BassDrum@2x.png in Resources */,
+				189D5336174C627D00ABB60D /* MiddleTom.png in Resources */,
+				189D5337174C627D00ABB60D /* LeftTom.png in Resources */,
+				189D5338174C627D00ABB60D /* HiHatCymbal.png in Resources */,
+				189D5339174C627D00ABB60D /* FloorTom.png in Resources */,
+				189D533A174C627D00ABB60D /* Cymbal.png in Resources */,
+				189D533B174C627D00ABB60D /* BassDrum.png in Resources */,
+				189D533D174C627D00ABB60D /* launch640-960.png in Resources */,
+				189D533E174C627D00ABB60D /* launch320-480.png in Resources */,
+				189D533F174C627D00ABB60D /* launch640-1136.png in Resources */,
+				189D5340174C627D00ABB60D /* background.jpg in Resources */,
+				189D5342174C627D00ABB60D /* backgroundiPhone5.png in Resources */,
+				189D5343174C627D00ABB60D /* backgroundiPhone5@2x.png in Resources */,
+				189D5344174C627D00ABB60D /* launchImage320-480.png in Resources */,
+				189D5345174C627D00ABB60D /* backgroundiPhone4@2x.png in Resources */,
+				189D5346174C627D00ABB60D /* backgroundiPhone4.png in Resources */,
+				189D5347174C627D00ABB60D /* SnareDrum@2x.png in Resources */,
+				189D534D174C62CE00ABB60D /* Default.png in Resources */,
+				189D534F174C62D400ABB60D /* Default@2x.png in Resources */,
+				189D5351174C62D900ABB60D /* Default-568h@2x.png in Resources */,
+				189D535C174C666A00ABB60D /* menuiPhone4.png in Resources */,
+				189D535D174C666A00ABB60D /* menuiPhone4@2x.png in Resources */,
+				189D535E174C666A00ABB60D /* menuiPhone5.png in Resources */,
+				189D535F174C666A00ABB60D /* menuiPhone5@2x.png in Resources */,
+				189D5360174C67DB00ABB60D /* icon57.png in Resources */,
+				189D5361174C67DD00ABB60D /* icon114.png in Resources */,
+				184F7B36174DBB4800AD46F1 /* SROptionViewController.xib in Resources */,
+				18C18E96174DE873005AAF46 /* reCalibrateButton.png in Resources */,
+				18C18E97174DE873005AAF46 /* reCalibrateButton@2x.png in Resources */,
+				18C18E98174DE873005AAF46 /* reCalibrateButtonDown.png in Resources */,
+				18C18E99174DE873005AAF46 /* reCalibrateButtonDown@2x.png in Resources */,
+				18C18E9E174E0B2C005AAF46 /* defaultButton.png in Resources */,
+				18C18E9F174E0B2C005AAF46 /* defaultButton@2x.png in Resources */,
+				18C18EA0174E0B2C005AAF46 /* defaultButtonDown.png in Resources */,
+				18C18EA1174E0B2C005AAF46 /* defaultButtonDown@2x.png in Resources */,
+				18C18EA6174E1675005AAF46 /* slider_maximum.png in Resources */,
+				18C18EA7174E1675005AAF46 /* slider_minimum.png in Resources */,
+				1846FB1C174F2D9D00090325 /* SRGameViewController.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		189D52CD174C622800ABB60D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				189D52E1174C622900ABB60D /* main.m in Sources */,
+				189D52E5174C622900ABB60D /* SRAppDelegate.m in Sources */,
+				189D52F1174C622900ABB60D /* SRViewController.m in Sources */,
+				189D5354174C62F900ABB60D /* SRHitDetector.m in Sources */,
+				189D5357174C63E600ABB60D /* SRMath.m in Sources */,
+				184F7B35174DBB4800AD46F1 /* SROptionViewController.m in Sources */,
+				1846FB11174EF8ED00090325 /* SRExternalViewController.m in Sources */,
+				1846FB14174F2D7000090325 /* SRExternalGameViewController.m in Sources */,
+				1846FB1B174F2D9D00090325 /* SRGameViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		189D52DD174C622900ABB60D /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				189D52DE174C622900ABB60D /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		189D52EC174C622900ABB60D /* MainStoryboard.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				189D52ED174C622900ABB60D /* en */,
+			);
+			name = MainStoryboard.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		189D52F2174C622900ABB60D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		189D52F3174C622900ABB60D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		189D52F5174C622900ABB60D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Air Drum/Air Drum-Prefix.pch";
+				INFOPLIST_FILE = "Air Drum/Air Drum-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		189D52F6174C622900ABB60D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Air Drum/Air Drum-Prefix.pch";
+				INFOPLIST_FILE = "Air Drum/Air Drum-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		189D52CC174C622800ABB60D /* Build configuration list for PBXProject "Air Drum" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				189D52F2174C622900ABB60D /* Debug */,
+				189D52F3174C622900ABB60D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		189D52F4174C622900ABB60D /* Build configuration list for PBXNativeTarget "Air Drum" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				189D52F5174C622900ABB60D /* Debug */,
+				189D52F6174C622900ABB60D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 189D52C9174C622800ABB60D /* Project object */;
+}
